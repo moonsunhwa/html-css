@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS 속성 연습</title>
+	<style>
+	/* background : 이미지파일명 위치 / 크기 반복 화면과의고정, 색상   */
+	* { margin:0;	padding:0; }
+	body, html { width:100%; height:100%; }
+	h1 { color:#fff; line-height:4; text-align:center; text-shadow:2px 2px 15px #000; }
+	article.page { clear:both; height:100%;	width:100%; overflow:hidden; }
+	.back1 { background-color:#333;  }
+	.back2 { background:url("ex1.png") bottom / 50% no-repeat fixed, #09c; }
+	.back3 { background-image:url("ex2.png"), url("img1.jpg"); 
+		background-repeat:no-repeat, repeat; background-position:center center; }
+	.back4 { background-image:url("ex1.jpg");  background-size:100% 100%;  
+		background-attachment:scroll; } 
+	</style>
+</head>
+<body>
+		<article class="page back1">
+			<h1>배경 색상 속성 : background-color</h1>
+		</article>
+		<article class="page back2"><h1>배경 속성 : background 통합속성</h1></article>
+		<article class="page back3">
+			<h1>배경 이미지 속성 : background-image</h1>
+			<h1>배경 반복 속성 : background-repeat</h1>
+			<h1>배경 위치 속성 : background-position</h1>
+		</article>
+		<article class="page back4">
+				<h1>배경 크기 속성 : background-size</h1>
+				<h1>배경 스크롤 속성 : background-attachment</h1>
+		</article>
+		<article class="page back5"></article>
+		<article class="page back6"></article>
+		<article class="page back7"></article>
+</body>
+</html>
